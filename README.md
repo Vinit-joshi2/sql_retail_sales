@@ -159,7 +159,7 @@ order by 2  desc
 limit 5
 ```
 
-9. ** write a sql query to find the number of unique customers who puchased items from each  category.**:
+9. **write a sql query to find the number of unique customers who puchased items from each  category.**:
 ```sql
 select count(distinct(customer_id)) as count_of_unique_customer , category from retail_sales
 group by category
