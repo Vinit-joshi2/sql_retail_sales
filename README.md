@@ -77,8 +77,8 @@ where
 	cogs is null or
 	total_sale is null 
 ```
-**deleting Null data from table
 ```sql
+-- deleting Null data from table
 delete from retail_sales
 where
 	transactions_id is null or
@@ -96,7 +96,7 @@ where
 
 The following SQL queries were developed to answer specific business questions:
 
-1. ** write a sql query to retrieve all colummns for sales made on '2022-11-05'**:
+1. **write a sql query to retrieve all colummns for sales made on '2022-11-05'**:
 ```sql
 select * from retail_sales
 where  sale_date = '2022-11-05';
@@ -134,7 +134,7 @@ group by   category , gender
 order by 1
 ```
 
-7. **write a swl query to calculate the average sale for each month .Find out the best selling month in each year**:
+7. **write a sql query to calculate the average sale for each month .Find out the best selling month in each year**:
 ```sql
 select year , month , avg_sale from
 (
